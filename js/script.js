@@ -24,7 +24,7 @@ $('.waveWrapper').on('mousemove', function (event) {
         transform: 'translate(-' + (event.clientX * 0.03) + '%, ' + (event.clientY * 0.02) + '%)'
     });
     $('.waveWrapper .circle.circle-3').css({
-        transform: 'translate(' + (event.clientX * 0.07) + '%, -' + (event.clientY * 0.07) + '%)'
+        transform: 'translate(' + (event.clientX * 0.02) + '%, -' + (event.clientY * 0.02) + '%)'
     });
     $('.waveWrapper .circle.circle-4').css({
         transform: 'translate(-' + (event.clientX * 0.04) + '%, ' + (event.clientY * 0.03) + '%)'
@@ -33,10 +33,10 @@ $('.waveWrapper').on('mousemove', function (event) {
         transform: 'translate(-' + (event.clientX * 0.06) + '%, ' + (event.clientY * 0.06) + '%)'
     });
     $('.waveWrapper .circle.circle-6').css({
-        transform: 'translate(' + (event.clientX * 0.08) + '%, -' + (event.clientY * 0.08) + '%)'
+        transform: 'translate(' + (event.clientX * 0.12) + '%, -' + (event.clientY * 0.12) + '%)'
     });
     $('.waveWrapper .circle.circle-7').css({
-        transform: 'translate(' + (event.clientX * 0.03) + '%, -' + (event.clientY * 0.03) + '%)'
+        transform: 'translate(' + (event.clientX * 0.02) + '%, -' + (event.clientY * 0.02) + '%)'
     });
     $('.waveWrapper .circle.circle-8').css({
         transform: 'translate(-' + (event.clientX * 0.02) + '%, ' + (event.clientY * 0.01) + '%)'
