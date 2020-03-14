@@ -41,6 +41,7 @@ a {
   padding: 0;
   height: 960px;
   max-height: 100%;
+  @import "circlesanimate";
 }
 .logo {
   //display: inline-block;
@@ -86,6 +87,7 @@ a {
   z-index: 10;
   font-size: 32px;
   color: #ffffff;
+  box-shadow: 0 0 40px rgba(255,255,255,0.3);
 
   .bars{
     display: flex;
@@ -104,12 +106,12 @@ a {
   }
 }
 .messendgers {
+  transform: rotate(-90deg);
+  transform-origin: 0 0;
   position: absolute;
   left: 74px;
   top: 50%;
   z-index: 10;
-  transform: rotate(-90deg);
-  transform-origin: 0 0;
 
   .telegram, .viber {
     color: #ffffff;
@@ -121,12 +123,33 @@ a {
   top: 230px;
   width: 100%;
   z-index: 10;
+  padding-left: 35px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   .headding{
     @extend %headFontStyles;
-    max-width: 40%;
+    max-width: 595px;
     color: #fff;
+    margin: 0;
+  }
+  .promoText{
+    font-size: 24px;
+    line-height: 140%;
+    color: #ffffff;
+    max-width: 595px;
+    margin: 30px 0;
+  }
+  .promoButtons{
+    @import "buttons";
+    :last-child{
+      background: transparent;
+      margin-left: 15px;
+      color: #ffffff;
+      border: 4px solid $fuschia;
+    }
+
   }
 }
 
@@ -157,6 +180,9 @@ a {
   background-size: 100%;
 }
 .waveBottom {
-  background-size: 50% 100px;
+  background-size: 100%;
+  top: 21%;
+  left: -4%;
+  transform: rotate(5deg);
+  z-index: 11;
 }
-

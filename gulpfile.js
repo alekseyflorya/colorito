@@ -21,7 +21,12 @@ function css_style(done) {
         .pipe( sourcemaps.write('./') )
         .pipe( gulp.dest('./css/') )
         .pipe( browserSync.stream() );
+    done()
+}
 
+function animateCss(done) {
+    gulp.src('./node_modules/animate.css/animate.min.css')
+        .pipe(gulp.dest('./css/'));
     done()
 }
 
@@ -56,4 +61,4 @@ function watchFiles(){
 }
 //gulp.task(css_style);
 
-gulp.task('default', gulp.parallel(sync, watchFiles));
+gulp.task('default', gulp.parallel(sync, watchFiles, animateCss));
