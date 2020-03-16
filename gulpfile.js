@@ -23,16 +23,9 @@ function css_style(done) {
         .pipe( browserSync.stream() );
     done()
 }
-
 function animateCss(done) {
     gulp.src('./node_modules/animate.css/animate.min.css')
         .pipe(gulp.dest('./css/'));
-    done()
-}
-
-function parallax(done) {
-    gulp.src('./node_modules/parallax-js/dist/parallax.min.js')
-      .pipe(gulp.dest('./js/'));
     done()
 }
 function wowJs(done) {
@@ -40,7 +33,13 @@ function wowJs(done) {
       .pipe(gulp.dest('./js/'));
     done()
 }
-
+function slick(done) {
+    gulp.src('./node_modules/slick-carousel/slick/slick.min.js')
+        .pipe(gulp.dest('./js/'));
+    gulp.src('./node_modules/slick-carousel/slick/*.scss')
+        .pipe(gulp.dest('./scss/'));
+    done()
+}
 function sync(done) {
     browserSync.init({
         server: {
@@ -63,4 +62,4 @@ function watchFiles(){
     gulp.watch("./**/*.js", browserReload);
 }
 
-gulp.task('default', gulp.parallel(sync, watchFiles, animateCss, parallax, wowJs));
+gulp.task('default', gulp.parallel(sync, watchFiles, animateCss, wowJs, slick));
