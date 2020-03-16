@@ -30,6 +30,17 @@ function animateCss(done) {
     done()
 }
 
+function parallax(done) {
+    gulp.src('./node_modules/parallax-js/dist/parallax.min.js')
+      .pipe(gulp.dest('./js/'));
+    done()
+}
+function wowJs(done) {
+    gulp.src('./node_modules/wow.js/dist/wow.min.js')
+      .pipe(gulp.dest('./js/'));
+    done()
+}
+
 function sync(done) {
     browserSync.init({
         server: {
@@ -45,20 +56,11 @@ function browserReload(done){
     done()
 }
 
-function print(done){
-    console.log("Hi!");
-    done();
-}
-
-function watchSass(){
-    gulp.watch("./scss/**/*", css_style);
-}
 function watchFiles(){
     gulp.watch("./scss/**/*", css_style);
     gulp.watch("./**/*.html", browserReload);
     gulp.watch("./**/*.php", browserReload);
     gulp.watch("./**/*.js", browserReload);
 }
-//gulp.task(css_style);
 
-gulp.task('default', gulp.parallel(sync, watchFiles, animateCss));
+gulp.task('default', gulp.parallel(sync, watchFiles, animateCss, parallax, wowJs));

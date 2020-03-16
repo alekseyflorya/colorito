@@ -16,6 +16,8 @@ for (var i = 0; i < bubblyButtons.length; i++) {
     bubblyButtons[i].addEventListener('click', animateButton, false);
 }
 
+new WOW().init();
+
 $('.waveWrapper').on('mousemove', function (event) {
     $('.waveWrapper .circle.circle-1').css({
         transform: 'translate(-' + (event.clientX * 0.05) + '%, ' + (event.clientY * 0.05) + '%)'
