@@ -44,3 +44,60 @@ $('.waveWrapper').on('mousemove', function (event) {
         transform: 'translate(-' + (event.clientX * 0.02) + '%, ' + (event.clientY * 0.01) + '%)'
     });
 });
+
+var target = $('.counterBlock');
+var targetPos = target.offset().top;
+var winHeight = $(window).height();
+var scrollToElem = targetPos - winHeight;
+var count = true;
+$(window).scroll(function(){
+    var winScrollTop = $(this).scrollTop();
+    if((winScrollTop > scrollToElem) && count ){
+        $('#circle1').circleProgress({
+            value: 0.33,
+            size: 144,
+            fill: {color: '#5831B5'}
+        }).on('circle-animation-progress', function(event, progress, stepValue) {
+            $(this).find('strong').text((stepValue*12).toFixed(0));
+        });
+        $('#circle2').circleProgress({
+            startAngle: Math.PI / 4*3,
+            value: 0.45,
+            size: 144,
+            fill: {color: '#5831B5'}
+        }).on('circle-animation-progress', function(event, progress, stepValue) {
+            $(this).find('strong').text((stepValue*44).toFixed(0));
+        });
+        $('#circle3').circleProgress({
+            startAngle: Math.PI / 4*2,
+            value: 0.6,
+            size: 144,
+            fill: {color: '#5831B5'}
+        }).on('circle-animation-progress', function(event, progress, stepValue) {
+            $(this).find('strong').text((stepValue*53).toFixed(0));
+        });
+        $('#circle4').circleProgress({
+            startAngle: Math.PI / 3.5,
+            value: 0.7,
+            size: 144,
+            fill: {color: '#5831B5'}
+        }).on('circle-animation-progress', function(event, progress, stepValue) {
+            $(this).find('strong').text((stepValue*50).toFixed(0));
+        });
+        count = false;
+    }
+});
+
+$('.slider-container-2').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    centerMode: true,
+    variableWidth: true
+});
+$('.services-slider').slick({
+    infinite: true
+});

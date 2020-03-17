@@ -5,16 +5,17 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/slick.min.css">
+    <link rel="stylesheet" href="css/slick-theme.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <script src="js/main.js"></script>
     <title>ColorIt progect</title>
 </head>
 <body>
 <div class="waveWrapper">
-    <div class="logo animated bounceInLeft">
+    <div class="logo">
         <img src="/img/logo.svg" alt="Colorit logo">
     </div>
     <div class="phones animated bounceInDown">
@@ -43,7 +44,7 @@
     </div>
     <div class="promoTextBottom animated bounceInDown">
         <p>Самая доступная и быстроокупаемая франшиза в детской тематике</p>
-        <a href="" class="nextStep"></a>
+        <a href="#firstVideo" class="nextStep animated infinite fadeInDown slower"></a>
     </div>
     <div class="waveWrapperInner bgTop">
         <div class="wave waveTop" style="background-image: url('/img/wave.png')"></div>
@@ -58,21 +59,57 @@
     <div class="circle circle-7"><img src="/img/dashed-circle.svg" alt=""></div>
     <div class="circle circle-8"></div>
 </div>
-<div class="firstVideo">
-    <div class="video-container wow bounceInDown">
+<div class="firstVideo" id="firstVideo">
+    <div class="video-container wow bounceInDown" data-wow-duration="2.5s">
         <iframe width="1120" height="630" src="https://www.youtube.com/embed/y95CwJ5OWs8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <div class="caption-box wow bounceInLeft" data-wow-delay="0.1s">
             <div class="caption-item caption-item-1 wow bounceInLeft" data-wow-delay="0.2s">Островок детского творчества по <br>раскрашиванию картин цветным песком</div>
-            <div class="caption-item caption-item-2 wow bounceInLeft" data-wow-delay="0.4s">Инвестиции<br>2000 $</div>
-            <div class="caption-item caption-item-3 wow bounceInLeft" data-wow-delay="0.5s">Роялти<br>отсутствует</div>
+            <div class="caption-item caption-item-2 wow bounceInLeft" data-wow-delay="0.4s" data-wow-duration="2.5s">Инвестиции<br>2000 $</div>
+            <div class="caption-item caption-item-3 wow bounceInLeft" data-wow-delay="0.5s" data-wow-duration="2.5s">Роялти<br>отсутствует</div>
         </div>
     </div>
 </div>
 <div class="counterBlock">
-    <div class="counter counter-1"></div>
-    <div class="counter counter-2"></div>
-    <div class="counter counter-3"></div>
-    <div class="counter counter-4"></div>
+    <div class="counter-box">
+        <div class="counter counter-1">
+            <div class="progress-bars">
+                <div id="circle1" data-thickness="5">
+                    <strong></strong>
+                </div>
+            </div>
+        </div>
+        <p>года франчайзинга</p>
+    </div>
+    <div class="counter-box">
+        <div class="counter counter-2">
+            <div class="progress-bars">
+                <div id="circle2" data-thickness="5">
+                    <strong></strong>
+                </div>
+            </div>
+        </div>
+        <p>городов</p>
+    </div>
+    <div class="counter-box">
+        <div class="counter counter-3">
+            <div class="progress-bars">
+                <div id="circle3" data-thickness="5">
+                    <strong></strong>
+                </div>
+            </div>
+        </div>
+        <p>партнера</p>
+    </div>
+    <div class="counter-box">
+        <div class="counter counter-4">
+            <div class="progress-bars">
+                <div id="circle4" data-thickness="5">
+                    <strong></strong>
+                </div>
+            </div>
+        </div>
+        <p>рентабельность до 35%</p>
+    </div>
 </div>
 <div class="advantages">
     <div class="advantage advantage-1">
@@ -92,18 +129,18 @@
     <div class="advantage advantage-3">
         <div class="text-block wow fadeIn" data-wow-delay="0.05s">
             <p class="wow fadeIn" data-wow-delay="0.1s">Франшиза Colorit стала</p>
-            <h2>“Открытие года”</h2>
+            <h2>“Открытием года”</h2>
             <p class="wow fadeIn" data-wow-delay="0.3s">по версии рейтинга BigBrands 2018 года</p>
         </div>
         <img src="/img/advantage-3.png" alt="" class="wow fadeIn" data-wow-delay="0.8s">
     </div>
 </div>
 <div class="secondVideo">
-    <div class="video-container wow bounceInDown" data-wow-delay="0.1s">
+    <div class="video-container wow bounceInDown" data-wow-delay="0.1s" data-wow-duration="2.5s">
         <iframe width="1120" height="630" src="https://www.youtube.com/embed/y95CwJ5OWs8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="caption-box wow bounceInLeft" data-wow-delay="0.2s">
+        <div class="caption-box wow bounceInLeft" data-wow-delay="0.2s" data-wow-duration="2.5s">
             <p>Как купить франшизу Colorit?</p>
-            <a href="" class="bubbly-button wow bounceInRight" data-wow-delay="0.5s">Заполнить анкету</a>
+            <a href="" class="bubbly-button wow bounceInRight" data-wow-delay="0.5s" data-wow-duration="2.5s">Заполнить анкету</a>
         </div>
     </div>
 </div>
@@ -138,6 +175,31 @@
         </div>
     </div>
 </div>
+
+<div class="card-slider-2">
+    <h2>Зарабатывай круглый год</h2>
+    <div class="slider-container-2">
+        <div class="slider-item slider-item-1">
+            <img src="/img/card-slider-1.png" alt="">
+            <h4>Стационарная точка в помещении</h4>
+            <p>Стационарная точка Colorit на улице (торговый центр, центр творчества, магазин детских товаров, ресторан с детской зоной и т.д)</p>
+            <a href="" class="slider-button">Хочу открыть точку!</a>
+        </div>
+        <div class="slider-item slider-item-2">
+            <img src="/img/card-slider-2.png" alt="">
+            <h4>Стационарная точка на улице</h4>
+            <p>Стационарная точка Colorit на улице в парке или уличном игровом комплексе.</p>
+            <a href="" class="slider-button">Хочу открыть точку!</a>
+        </div>
+        <div class="slider-item slider-item-3">
+            <img src="/img/card-slider-3.png" alt="">
+            <h4>Мастер-класс</h4>
+            <p>Работа с комплексом в формате мастер-класса на выездных мероприятиях, фестивалях, днях рождения, городских праздниках и любых ивентах с подходящей целевой аудиторией.</p>
+            <a href="" class="slider-button">Хочу открыть точку!</a>
+        </div>
+    </div>
+</div>
+
 <div class="materials">
     <h2>Безопасные материалы</h2>
     <div class="sand">
@@ -146,7 +208,7 @@
             <ul>
                 <li class="sand-text-li-1">Для окрашивания мраморной крошки и кварцевого песка используются лучшие полиуретановые системы окраски.</li>
                 <li class="sand-text-li-2">Наш цветной песок не вызывает аллергических реакций, не красит руки и одежду.</li>
-                <li class="sand-text-li-3">Разрешен в использование в детских/медицинских учредеждениях, что подтверждено сертификатами качества.</li>
+                <li class="sand-text-li-3">Разрешен в использование в детских/медицинских учреждениях, что подтверждено сертификатами качества.</li>
             </ul>
         </div>
         <img src="/img/sand-1.png" alt="">
@@ -167,8 +229,8 @@
     <h2>Вся продукция сертифицирована</h2>
     <p>Соответствует техническому регламенту Украины о безопасности игрушек, используются европейские материалы.</p>
     <div class="sertificates-slider">
-        <img src="/img/sertificate-1.jpg" alt="" class="sertif-slider-item sertif-slider-item-1">
-        <img src="/img/sertificate-2.jpg" alt="" class="sertif-slider-item sertif-slider-item-2">
+        <img src="/img/sertificate-2.jpg" alt="" class="sertif-slider-item sertif-slider-item-1">
+        <img src="/img/sertificate-1.jpg" alt="" class="sertif-slider-item sertif-slider-item-2">
         <img src="/img/sertificate-3.jpg" alt="" class="sertif-slider-item sertif-slider-item-3">
     </div>
 </div>
@@ -176,7 +238,7 @@
     <img src="/img/equipment-1.png" alt="">
     <div class="equipment-text">
         <h2>Уникальное оборудование</h2>
-        <p>Комплекс оборудование Colorit является авторской разработкой. Изготавливается только нашей компанией, защищен патентами.</p>
+        <p>Комплекс оборудования Colorit является авторской разработкой. Изготавливается только нашей компанией, защищен патентами.</p>
     </div>
     <p class="equipment-warning"><span>Любое копирование незаконно</span></p>
 </div>
@@ -237,7 +299,7 @@
             <img src="/img/reviews-1.png" alt="">
             <div class="review-text">
                 <h3><img src="/img/1.png" alt="">Игорь, г.Днепр</h3>
-                <p>Самый молодой партнер, первую франшизу преобрел в 2017г. На данный момент успешно управляет тремя франшизами в двух городах (г.Днепр, г.Черкассы)</p>
+                <p>Самый молодой партнер, первую франшизу приобрел в 2017г. На данный момент успешно управляет тремя франшизами в двух городах (г.Днепр, г.Черкассы)</p>
             </div>
         </div>
         <div class="review-item review-item-2" style="display: none">
@@ -260,7 +322,7 @@
     <div class="training-text">
         <h2>Обучение франчайзи после запуска франшизы</h2>
         <p>После покупки франшизы Вы и Ваши сотрудники проходите 7-модульный он-лайн тренинг, по специфике продаж и обслуживанию клиентов, от владельцев компании.</p>
-        <p>Обучение возможно и <span>бесплатно</span> для каждого франчайзы.</p>
+        <p>Обучение возможно и <span>бесплатно</span> для каждого франчайзи.</p>
     </div>
     <img src="/img/training-1.png" alt="">
 </div>
@@ -281,47 +343,131 @@
 </div>
 <div class="faq">
     <h2>Часто задаваемые вопросы</h2>
-    <div>
-        <ul>
-            <li>
-                <a href="">Сколько стоит франшиза Colorit и что в нее входит?</a>
-                <p>Стоимость франшизы 2000$. В нее входит: право использования бренда, комплект авторского оборудования, расходные материалы, франчайзинговый пакет (в которой описаны все инструкции и стандарты), 7-модульный онлайн тренинг, обучение персонала, партнерские цены на всю продукцию, стартовый набор полиграфии.</p>
-            </li>
-            <li>
-                <a href="">Могу ли я купить сразу несколько франшиз?</a>
-                <p>Да, каждую локацию мы согласовываем.</p>
-            </li>
-            <li>
-                <a href="">Как быстро я получу оборудование после оплаты?</a>
-                <p>В среднем срок изготовления 14-20 дней, за это время мы проводим с Вами On-line обучение.</p>
-            </li>
-            <li>
-                <a href="">Будут ли дополнительные затраты на открытие торговой точки?</a>
-                <p>Если вы планируете работать на улице, вам понадобится стол и шатер, который будет защищать от солнца и дождя. В формате работы в помещении понадобится стол, остальное зависит от конкретной локации.</p>
-            </li>
-            <li>
-                <a href="">Нет опыта в предпринимательстве, полутся ли у меня заработать?</a>
-                <p>Да получится, благодаря нашему On-line обучению и знаниям накопленным за 5 лет работы.</p>
-            </li>
-            <li>
-                <a href="">Какую поддержку оказывает компания после запуска моей франшизы?</a>
-                <p>Постоянная связь с центральным офисом, бесперебойные поставки товара с нашего склада, отгрузка в день заказа, ежегодное обновление ассортимента, бесплатные тренинги для наших партнеров от профильных специалистов, общие рекламные кампании и акции, удобная система учета и заказов. Все лучшие разработанные продукты, рекламные решения, новые каналы продаж, которые мы постоянно тестируем на своей рознице, передаются нашим партнерам</p>
-            </li>
-            <li>
-                <a href="">Я живу в городе с маленьким населением, будет ли моя франшиза успешна?</a>
-                <p>Да, у нас есть успешный партнер в г. Старобельск, население которого не превышает 20000 человек.</p>
-            </li>
-            <li>
-                <a href="">Если в моем городе уже есть франшиза Colorit, могу ли я стать еще одним партнером?</a>
-                <p>Да, каждый партнер закреплен за определенной локацией, система работы построена так, чтоб наши партнеры не конкурировали между собой.</p>
-            </li>
-        </ul>
+    <div class="accordion" id="accordion">
+        <div class="row">
+        <div class="col-6">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="faq-btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Сколько стоит франшиза Colorit и что в нее входит?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                    Стоимость франшизы 2000$. В нее входит: право использования бренда, комплект авторского оборудования, расходные материалы, франчайзинговый пакет (в которой описаны все инструкции и стандарты), 7-модульный онлайн тренинг, обучение персонала, партнерские цены на всю продукцию, стартовый набор полиграфии.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button class="faq-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Могу ли я купить сразу несколько франшиз?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                    Да, каждую локацию мы согласовываем.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button class="faq-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Как быстро я получу оборудование после оплаты?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                    В среднем срок изготовления 14-20 дней, за это время мы проводим с Вами On-line обучение.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                    <button class="faq-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        Будут ли дополнительные затраты на открытие торговой точки?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                <div class="card-body">
+                    Если вы планируете работать на улице, вам понадобится стол и шатер, который будет защищать от солнца и дождя. В формате работы в помещении понадобится стол, остальное зависит от конкретной локации.
+                </div>
+            </div>
+        </div>
+        </div>
+            <div class="col-6">
+        <div class="card">
+            <div class="card-header" id="headingFive">
+                <h5 class="mb-0">
+                    <button class="faq-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        Нет опыта в предпринимательстве, полутся ли у меня заработать?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                <div class="card-body">
+                    Да получится, благодаря нашему On-line обучению и знаниям накопленным за 5 лет работы.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingSix">
+                <h5 class="mb-0">
+                    <button class="faq-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Какую поддержку оказывает компания после запуска моей франшизы?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                <div class="card-body">
+                    Постоянная связь с центральным офисом, бесперебойные поставки товара с нашего склада, отгрузка в день заказа, ежегодное обновление ассортимента, бесплатные тренинги для наших партнеров от профильных специалистов, общие рекламные кампании и акции, удобная система учета и заказов. Все лучшие разработанные продукты, рекламные решения, новые каналы продаж, которые мы постоянно тестируем на своей рознице, передаются нашим партнерам.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingSeven">
+                <h5 class="mb-0">
+                    <button class="faq-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        Я живу в городе с маленьким населением, будет ли моя франшиза успешна?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                <div class="card-body">
+                    Да, у нас есть успешный партнер в г. Старобельск, население которого не превышает 20000 человек.
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingEight">
+                <h5 class="mb-0">
+                    <button class="faq-btn collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        Если в моем городе уже есть франшиза Colorit, могу ли я стать еще одним партнером?
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordion">
+                <div class="card-body">
+                    Да, каждый партнер закреплен за определенной локацией, система работы построена так, чтоб наши партнеры не конкурировали между собой.
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
     </div>
 </div>
 <div class="footer">
     <div class="footer-container">
         <div class="footer-top">
-            <h2>Остались вопросы?<span>Мы можем на них ответить</span></h2>
+            <h2>Остались вопросы?<br><span>Мы можем на них ответить</span></h2>
             <a class="bubbly-button" href="">Оставить заявку</a>
         </div>
         <div class="footer-bottom">
@@ -355,8 +501,10 @@
 </div>
 
     <script src="js/jquery/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/wow.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery/circle-progress.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
