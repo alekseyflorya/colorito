@@ -88,16 +88,6 @@ $(window).scroll(function(){
     }
 });
 
-$('.slider-container-2').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    adaptiveHeight: true,
-    centerMode: true,
-    variableWidth: true
-});
-$('.services-slider').slick({
-    infinite: true
+$(document).ready(function(){
+
 });
