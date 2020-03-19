@@ -3,8 +3,7 @@
   border-radius: 100%;
   width: 100px;
   height: 100px;
-  z-index: 10;
-  //animation: pulsing 2s infinite;
+  z-index: 12;
 }
 .circle-1{
   background: #B1ED07;
@@ -68,6 +67,7 @@
   top: 757px;
   left: 459px;
 }
+
 
 @keyframes pulsing {
   0% {

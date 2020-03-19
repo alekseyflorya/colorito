@@ -18,30 +18,33 @@ for (var i = 0; i < bubblyButtons.length; i++) {
 
 new WOW().init();
 
-$('.waveWrapper').on('mousemove', function (event) {
-    $('.waveWrapper .circle.circle-1').css({
+$('.waveWrapper, .firstVideo, .counterBlock, .advantages, .secondVideo, .materials, .cta-block, .profitCalc, .footer-container').on('mousemove', function (event) {
+    $('.circle.circle-1').css({
         transform: 'translate(-' + (event.clientX * 0.05) + '%, ' + (event.clientY * 0.05) + '%)'
     });
-    $('.waveWrapper .circle.circle-2').css({
+    $('.circle.circle-2').css({
         transform: 'translate(-' + (event.clientX * 0.03) + '%, ' + (event.clientY * 0.02) + '%)'
     });
-    $('.waveWrapper .circle.circle-3').css({
+    $('.circle.circle-3').css({
         transform: 'translate(' + (event.clientX * 0.02) + '%, -' + (event.clientY * 0.02) + '%)'
     });
-    $('.waveWrapper .circle.circle-4').css({
+    $('.circle.circle-4').css({
         transform: 'translate(-' + (event.clientX * 0.04) + '%, ' + (event.clientY * 0.03) + '%)'
     });
-    $('.waveWrapper .circle.circle-5').css({
+    $('.circle.circle-5').css({
         transform: 'translate(-' + (event.clientX * 0.06) + '%, ' + (event.clientY * 0.06) + '%)'
     });
-    $('.waveWrapper .circle.circle-6').css({
+    $('.circle.circle-6').css({
         transform: 'translate(' + (event.clientX * 0.12) + '%, -' + (event.clientY * 0.12) + '%)'
     });
-    $('.waveWrapper .circle.circle-7').css({
+    $('.circle.circle-7').css({
         transform: 'translate(' + (event.clientX * 0.02) + '%, -' + (event.clientY * 0.02) + '%)'
     });
-    $('.waveWrapper .circle.circle-8').css({
+    $('.circle.circle-8').css({
         transform: 'translate(-' + (event.clientX * 0.02) + '%, ' + (event.clientY * 0.01) + '%)'
+    });
+    $('.circle.circle-9').css({
+        transform: 'translate(-' + (event.clientX * 0.1) + '%, ' + (event.clientY * 0.05) + '%)'
     });
 });
 
