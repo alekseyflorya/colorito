@@ -33,13 +33,13 @@ function wowJs(done) {
       .pipe(gulp.dest('./js/'));
     done()
 }
-function slick(done) {
-    gulp.src('./node_modules/slick-carousel/slick/slick.min.js')
-        .pipe(gulp.dest('./js/'));
-    gulp.src('./node_modules/slick-carousel/slick/*.scss')
-        .pipe(gulp.dest('./scss/'));
-    done()
-}
+// function slick(done) {
+//     gulp.src('./node_modules/slick-carousel/slick/slick.min.js')
+//         .pipe(gulp.dest('./js/'));
+//     gulp.src('./node_modules/slick-carousel/slick/*.scss')
+//         .pipe(gulp.dest('./scss/'));
+//     done()
+// }
 function sync(done) {
     browserSync.init({
         server: {
@@ -62,4 +62,4 @@ function watchFiles(){
     gulp.watch("./**/*.js", browserReload);
 }
 
-gulp.task('default', gulp.parallel(sync, watchFiles, animateCss, wowJs, slick));
+gulp.task('default', gulp.parallel(sync, watchFiles, animateCss, wowJs));

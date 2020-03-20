@@ -610,9 +610,11 @@ p {
     @extend %headFontStyles;
   }
   .slider-container{
+    margin-top: 50px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
+    perspective: 100px;
+    perspective-origin: center;
     .slider-item{
       position: relative;
       display: inline-block;
@@ -620,7 +622,7 @@ p {
       box-shadow: 5px 5px 20px rgba(53, 20, 147, 0.3);
       border-radius: 49px;
       box-sizing: border-box;
-      max-width: 480px;
+      max-width: 500px;
       height: 640px;
       padding: 30px;
       h4{
@@ -653,77 +655,47 @@ p {
         z-index: 10;
       }
     }
-    .slider-item-1{
-      transform: scale(.8);
+    .owl-item{
+      visibility: hidden;
+      padding-bottom: 20px;
+    }
+    .active{
+      transform: translateX(100px) scale(0.8);
       opacity: 0.5;
-      margin-right: -100px;
+      transition: 1s ease-in-out;
+      visibility: visible;
     }
-    .slider-item-2{
-      z-index: 11;
-    }
-    .slider-item-3{
-      transform: scale(.8);
+    .active.center + .active{
+      transform: translateX(-100px) scale(0.8);
+      z-index: 10;
       opacity: 0.5;
-      margin-left: -100px;
+      transition: 1s ease-in-out;
+      visibility: visible;
     }
-  }
-}
-
-.card-slider-2{
-  max-width: 1180px;
-  margin: auto;
-  margin-bottom: 80px;
-  h2{
-    @extend %headFontStyles;
-  }
-  .slider-container-2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .slider-item{
-      position: relative;
-      display: inline-block;
-      background: #5831B5;
-      box-shadow: 5px 5px 20px rgba(53, 20, 147, 0.3);
-      border-radius: 49px;
-      box-sizing: border-box;
-      width: 480px;
-      height: 640px;
-      padding: 30px;
-
-      h4{
-        color: #FFF500;
-        font-weight: bold;
-        font-size: 22px;
-        line-height: 31px;
-        margin-top: 9px;
-        margin-bottom: 9px;
-        max-width: 420px;
-      }
-      p{
-        color: #ffffff;
-        margin-top: 9px;
-        margin-bottom: 9px;
-        max-width: 420px;
-      }
-      img{
-        max-width: 100%;
-        height: auto;
-      }
-      .slider-button{
-        color: #4F26AF;
-        background: #FFF500;
-        border-radius: 30px;
-        padding: 16px 39px;
-        max-width: 100%;
+    .active + .active.center{
+      transform: translateX(0) scale(1);
+      z-index: 12;
+      transition: 1s ease-in-out;
+      opacity: 1;
+      visibility: visible;
+    }
+    .owl-nav{
+      button{
+        width: 30%;
+        height: 100%;
         position: absolute;
-        bottom: 40px;
-        z-index: 10;
+      }
+      .owl-prev{
+        left: 5%;
+        top: 0;
+      }
+      .owl-next{
+        right: 5%;
+        top: 0;
       }
     }
   }
 }
-
 
 .materials{
   max-width: 1180px;
@@ -841,7 +813,6 @@ p {
   max-width: 1180px;
   margin: auto;
   margin-bottom: 160px;
-
   h2{
     @extend %headFontStyles;
     max-width: 50%;
@@ -851,32 +822,48 @@ p {
   }
   .sertificates-slider{
     margin-top: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .sertif-slider-item{
+    display: inline-block;
+    .slider-item{
       max-width: 480px;
       height: auto;
     }
-    .sertif-slider-item-1{
-      transform: scale(0.8);
-      margin-right: -100px;
-      //box-shadow: -3px 3px 15px rgba(128, 128, 128, 0.5);
-      border-radius: 49px;
-      opacity: 0.6;
+    .owl-item{
+      visibility: hidden;
     }
-    .sertif-slider-item-2{
-      //
-      // box-shadow: 5px 5px 20px rgba(53, 20, 147, 0.3);
-      border-radius: 49px;
-      z-index: 11;
+    .active{
+      transform: translateX(80px) scale(0.8);
+      opacity: 0.5;
+      transition: all .7s ease;
+      visibility: visible;
     }
-    .sertif-slider-item-3{
-      transform: scale(0.8);
-      margin-left: -100px;
-      //box-shadow: 3px 3px 15px rgba(128, 128, 128, 0.5);
-      border-radius: 49px;
-      opacity: 0.6;
+    .active.center + .active{
+      transform: translateX(-80px) scale(0.8);
+      z-index: 10;
+      opacity: 0.5;
+      transition: all .7s ease;
+      visibility: visible;
+    }
+    .active + .active.center{
+      transform: translateX(0) scale(1);
+      z-index: 12;
+      transition: all .7s ease;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .owl-nav{
+    button{
+      width: 30%;
+      height: 100%;
+      position: absolute;
+    }
+    .owl-prev{
+      left: 5%;
+      top: 0;
+    }
+    .owl-next{
+      right: 5%;
+      top: 0;
     }
   }
 }
@@ -925,9 +912,6 @@ p {
     max-width: 50%;
     h2{
       @extend %headFontStyles;
-    }
-    p{
-
     }
   }
 }

@@ -91,6 +91,38 @@ $(window).scroll(function(){
     }
 });
 
-$(document).ready(function(){
+$(document).ready(function () {
+    $('.sertificates-slider').owlCarousel({
+        animateOut: 'easeOut',
+        animateIn: 'easeIn',
+        center: true,
+        item: 3,
+        loop: true,
+        navText: ['Next', 'Prev']
+    });
+    // $('.sertificates-slider').on('click', '.owl-item', function () {
+    //     var click = $(this).index();
+    //     $('.sertificates-slider').trigger( 'to.owl.carousel', [click] )
+    // });
 
+    $('.slider-container').owlCarousel({
+        center: true,
+        item: 3,
+        loop: true,
+        nav:true,
+        dots: true,
+        navText: ['Next', 'Prev']
+    });
+    // $('.slider-container').on('click', '.owl-item', function () {
+    //     var click = $(this).index();
+    //     $('.slider-container').trigger( 'to.owl.carousel', [click] )
+    // });
+
+    $('.services-slider').owlCarousel({
+        animateOut: 'easeOut',
+        animateIn: 'easeIn',
+        loop: true,
+        items:1,
+        smartSpeed:450
+    });
 });
