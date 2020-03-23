@@ -21,13 +21,6 @@
         <a href="tel:380979390305" class="phone">+38 097 939 03 05</a>
         <a href="tel:380639390305" class="phone">+38 063 939 03 05</a>
     </div>
-<!--    <div class="menu animated bounceInRight">-->
-<!--        <div class="bars">-->
-<!--            <i class="bar"></i>-->
-<!--            <i class="bar"></i>-->
-<!--            <i class="bar"></i>-->
-<!--        </div>-->
-<!--    </div>-->
 
     <div class="overlay">
         <nav class="overlayMenu row">
@@ -677,22 +670,26 @@
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h3 class="modal-title" id="callbackModalLabel">Заказать обратный звонок</h3>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true"></span>
                 </button>
             </div>
             <div class="modal-body">
-                <form>
-                    <div class="form-group">
-                        <label for="recipient-tel" class="col-form-label">Оставьте ваш номер телефона и мы вам перезвоним!</label>
-                        <input type="tel" class="form-control" id="recipient-tel" placeholder="+38 (xxx) xxx xx xx">
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="modal-title" id="callbackModalLabel">Заказать обратный звонок</h3>
+                        <form action="telegram.php" method="POST">
+                            <div class="form-group">
+                                <label for="">Оставьте ваш номер телефона и мы вам перезвоним!</label>
+                                <input type="text" class="form-control user_phone" id="user_phone" name="user_phone" placeholder="+38 (xxx) xxx xx xx">
+                            </div>
+                            <button type="submit" class="bubbly-button">Заказать звонок</button>
+                        </form>
                     </div>
-                </form>
+                </div>
             </div>
-            <div class="modal-footer">
-                <button type="button" class="bubbly-button">Заказать звонок</button>
-            </div>
+
         </div>
     </div>
 </div>

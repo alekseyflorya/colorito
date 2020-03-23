@@ -114,8 +114,6 @@ $(window).scroll(function(){
 
 $(document).ready(function () {
     $('.sertificates-slider').owlCarousel({
-        animateOut: 'easeOut',
-        animateIn: 'easeIn',
         center: true,
         item: 3,
         loop: true,
@@ -127,8 +125,6 @@ $(document).ready(function () {
     // });
 
     $('.slider-container').owlCarousel({
-        animateOut: 'easeOut',
-        animateIn: 'easeIn',
         center: true,
         item: 3,
         loop: true,

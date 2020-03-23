@@ -641,7 +641,7 @@ p {
   }
 }
 .card-slider{
-  max-width: 100%;
+  max-width: 1200px;
   margin: auto;
   margin-bottom: 80px;
   h2{
@@ -704,24 +704,25 @@ p {
     .owl-item{
       visibility: hidden;
       padding-bottom: 20px;
+      opacity: 0;
     }
     .active{
-      transform: translateX(100px) scale(0.8);
-      opacity: 0.5;
-      transition: 1s ease-in-out;
+      transform: translateX(70px) scale(0.8);
+      opacity: 0.4;
+      //transition: all 1s;
       visibility: visible;
     }
     .active.center + .active{
-      transform: translateX(-100px) scale(0.8);
+      transform: translateX(-70px) scale(0.8);
       z-index: 10;
-      opacity: 0.5;
-      transition: 1s ease-in-out;
+      opacity: 0.4;
+      transition: all 1s;
       visibility: visible;
     }
     .active + .active.center{
       transform: translateX(0) scale(1);
       z-index: 12;
-      transition: 1s ease-in-out;
+      transition: all 1s;
       opacity: 1;
       visibility: visible;
     }
@@ -1725,6 +1726,61 @@ p {
       border-top: none;
       border-bottom-right-radius: 30px;
       border-bottom-left-radius: 30px;
+    }
+  }
+}
+#callbackModal{
+  @import "buttons";
+  .bubbly-button{
+    width: 100%;
+    font-weight: 700;
+  }
+
+  .modal-content{
+    background: transparent;
+    width: auto;
+    h3{
+      font-size: 24px;
+      line-height: 29px;
+      color: #FF7E06;
+      margin-bottom: 20px;
+    }
+    .modal-header{
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+      background: url("../img/form-top-bg.png") no-repeat;
+      background-size: cover;
+      border-bottom: none;
+      .close{
+        background: transparent;
+        padding: 2rem 2rem 0 0;
+        outline: none;
+        span{
+          display: block;
+          width: 25px;
+          height: 25px;
+          background: url("../img/form-close.svg");
+        }
+      }
+    }
+    .modal-body{
+      background: #FFFFFF;
+      //border: 1px solid #5831B5;
+      border-top: none;
+      border-bottom-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+      padding: 3rem;
+      .user_phone{
+        background: rgba(88, 49, 181, 0.1);
+        border: 1px solid #E3D8FF;
+        border-radius: 10px;
+        margin-top: 40px;
+        color: #BDBDBD;
+        font-size: 18px;
+        &:focus{
+          color: #1b1e21;
+        }
+      }
     }
   }
 }
