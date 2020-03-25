@@ -127,8 +127,11 @@ p {
     margin: 30px 0;
   }
   .promoButtons{
+    a{
+      color: #4F26AF;
+    }
     @import "buttons";
-    :last-child{
+    .callback-btn{
       background: transparent;
       margin-left: 15px;
       color: #ffffff;
@@ -1705,13 +1708,74 @@ p {
       border-top: none;
       border-bottom-right-radius: 30px;
       border-bottom-left-radius: 30px;
+      padding: 4rem;
+      h2{
+        font-family: $headFont;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 35px;
+        line-height: 46px;
+        color: #FF7E06;
+        margin-bottom: 3rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+      form{
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+      .form-group label{
+        font-size: 20px;
+        line-height: 27px;
+        font-weight: 600;
+        color: #646060;
+      }
+      .radio{
+        margin-bottom: 40px;
+        legend{
+          font-size: 20px;
+          line-height: 27px;
+          font-weight: 600;
+          color: #646060;
+          margin-bottom: 20px;
+        }
+      }
+      .custom-control.custom-radio{
+        margin-bottom: 25px;
+      }
+      .custom-radio .custom-control-label::before {
+        border: 3px solid #FF7E06;
+        background: #fff;
+      }
+      .custom-radio .custom-control-input:checked~.custom-control-label::after {
+        background-image: url(../img/radio-checked.svg);
+        outline: none;
+      }
+      .user_field{
+        background: rgba(88, 49, 181, 0.1);
+        border: 1px solid #E3D8FF;
+        border-radius: 10px;
+        margin-bottom: 40px;
+        color: #BDBDBD;
+        font-size: 18px;
+        padding: .9rem 1.2rem;
+        &:focus{
+          color: #1b1e21;
+        }
+      }
+      @import "buttons";
+      .bubbly-button{
+        width: 100%;
+        font-weight: 700;
+        margin-top: 100px;
+      }
     }
   }
 }
 #callbackModal{
   @import "buttons";
   .bubbly-button{
-    width: 100%;
+    //width: 100%;
     font-weight: 700;
   }
 
@@ -1763,4 +1827,5 @@ p {
     }
   }
 }
+
 @import "responsive";

@@ -54,7 +54,7 @@
         <p class="promoText">Окупаемость 14 дней, прибыль от 800 - 3000$, рентабильность бизнеса до 35%</p>
         <div class="promoButtons">
             <button type="button" class="bubbly-button" data-toggle="modal" data-target="#formModal">Оставить заявку</button>
-            <button type="button" class="bubbly-button" data-toggle="modal" data-target="#callbackModal">Заказать звонок</button>
+            <button type="button" class="bubbly-button callback-btn" data-toggle="modal" data-target="#callbackModal">Заказать звонок</button>
         </div>
 
     </div>
@@ -663,7 +663,78 @@
                 </button>
             </div>
             <div class="modal-body">
-                <iframe id="formModalFrame" src="https://docs.google.com/forms/d/e/1FAIpQLSfzLxaeUYMNy5Z1VYRsoWcrMH7Ai1vxWasUr_FHdsZzXuNLbg/viewform?embedded=true" width="640" height="2182" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+                <h2>Заявка на получение презентации</h2>
+                <script type="text/javascript">var submitted=false;</script>
+                <iframe name="hidden_iframe" id="hidden_iframe"
+                        style="display:none;" onload="if(submitted)
+{window.location='thank-you-page.html';}"></iframe>
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfzLxaeUYMNy5Z1VYRsoWcrMH7Ai1vxWasUr_FHdsZzXuNLbg/formResponse" method="post"
+                      target="hidden_iframe" onsubmit="submitted=true;">
+                    <div class="form-group">
+                        <label for="entry.1081170328">Укажите ваш город</label>
+                        <input type="text" class="form-control user_field" id="user_city" aria-describedby="i.desc.1405763044 i.err.1405763044" name="entry.1081170328" placeholder="Укажите ваш город" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="entry.1425576669">Компания или частное лицо</label>
+                        <input type="text" class="form-control user_field" id="user_company" aria-describedby="i.desc.2073429996 i.err.2073429996" name="entry.1425576669" placeholder="Компания или частное лицо">
+                    </div>
+                    <div class="form-group">
+                        <label for="entry.915440381">Сфера деятельности</label>
+                        <input type="text" class="form-control user_field" id="user_activity" aria-describedby="i.desc.479863143 i.err.479863143" name="entry.915440381" placeholder="Сфера деятельности">
+                    </div>
+                    <div class="radio">
+                        <legend>Откуда Вы о нас узнали?</legend>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio1" name="entry.1864276753" class="custom-control-input" value="Лично знаком с Colorit">
+                            <label class="custom-control-label" for="customRadio1">Лично знаком с Colorit</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio2" name="entry.1864276753" class="custom-control-input" value="Instagram">
+                            <label class="custom-control-label" for="customRadio2">Instagram</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio3" name="entry.1864276753" class="custom-control-input" value="Facebook">
+                            <label class="custom-control-label" for="customRadio3">Facebook</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio4" name="entry.1864276753" class="custom-control-input" value="Мероприятия">
+                            <label class="custom-control-label" for="customRadio4">Мероприятия</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio5" name="entry.1864276753" class="custom-control-input" value="Каталоги сайтов по франчайзингу">
+                            <label class="custom-control-label" for="customRadio5">Каталоги сайтов по франчайзингу</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio6" name="entry.1864276753" class="custom-control-input" value="Торговая точка в вашем городе">
+                            <label class="custom-control-label" for="customRadio6">Торговая точка в вашем городе</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio7" name="entry.1864276753" class="custom-control-input" value="Оборот трафарета">
+                            <label class="custom-control-label" for="customRadio7">Оборот трафарета</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio8" name="entry.1864276753" class="custom-control-input" value="Google (реклама или поиск)">
+                            <label class="custom-control-label" for="customRadio8">Google (реклама или поиск)</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio9" name="entry.1864276753" class="custom-control-input" value="Другое">
+                            <label class="custom-control-label" for="customRadio9">Другое</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="">Фамилия и Имя</label>
+                        <input type="text" class="form-control user_field" id="user_name" aria-describedby="i.desc.17838461 i.err.17838461" name="entry.1757224460" placeholder="Фамилия и Имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Телефон (telegram или viber)</label>
+                        <input type="text" class="form-control user_field" id="user_telephone" aria-describedby="i.desc.1509365088 i.err.1509365088" name="entry.6400866" placeholder="+38 (xxx) xxx xx xx">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Ссылка на профиль (fb или inst)</label>
+                        <input type="text" class="form-control user_field" id="user_social" aria-describedby="i.desc.226337705 i.err.226337705" name="entry.562881112" placeholder="Ссылка на профиль (fb или inst)">
+                    </div>
+                    <button type="submit" class="bubbly-button">Получить презентацию</button>
+                </form>
             </div>
         </div>
     </div>
