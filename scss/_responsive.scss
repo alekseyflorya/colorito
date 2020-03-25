@@ -1,6 +1,19 @@
 @media (min-width:1500px){
   .earnings::after{
-      left: -16%;
-      transform: scaleX(1.34);
-    }
+    left: -16%;
+    bottom: -200px;
+    transform: scaleX(1.34);
+  }
+  .card-slider{
+    max-width: 80%;
+  }
+  .card-slider .slider-container .slider-item{
+    max-width: 500px;
+  }
+  .card-slider .slider-container .owl-stage .active{
+    transform: translateX(250px) scale(0.8);
+  }
+  .card-slider .slider-container .owl-stage .active.center+.active{
+    transform: translateX(-250px) scale(0.8);
+  }
 }

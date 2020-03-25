@@ -109,6 +109,7 @@ $(document).ready(function () {
         center: true,
         item: 3,
         loop: true,
+        dots: true,
         navText: ['', '']
     });
 
@@ -121,15 +122,25 @@ $(document).ready(function () {
         navText: ['', '']
     });
 
-    $('.services-slider, .review-slider').owlCarousel({
-        animateOut: 'easeOut',
-        animateIn: 'easeIn',
-        loop: true,
+    $('.services-slider').owlCarousel({
+        animateOut: 'slideOutLeft',
+        animateIn: 'slideInRight',
         items:1,
-        smartSpeed:500,
+        margin:30,
         autoplay:true,
         autoplayTimeout:5000,
-        autoplayHoverPause:true
+        stagePadding:30,
+        smartSpeed:450
+    });
+    $('.review-slider').owlCarousel({
+        animateOut: 'slideOutLeft',
+        animateIn: 'slideInRight',
+        items:1,
+        margin:30,
+        autoplay:true,
+        autoplayTimeout:5000,
+        stagePadding:30,
+        smartSpeed:450
     });
 });
 
