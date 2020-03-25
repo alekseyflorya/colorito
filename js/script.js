@@ -2,21 +2,13 @@ $("#navToggle").click(function() {
     $(this).toggleClass("active");
     $(".overlay").toggleClass("open");
     // this line ▼ prevents content scroll-behind
-    $(".mainPromo").hide();
-    $(".promoTextBottom").hide();
-    //$("body").toggleClass("locked");
+    $("body").toggleClass("locked");
 });
 $('.overlay').click(function() {
+    $("body").toggleClass("locked");
     $(this).removeClass('open');
-    $('.mainPromo').show();
     $('.navBurger').removeClass('active');
 });
-$('.navBurger.active').click(function() {
-    $('.overlay').removeClass('open');
-    $('.mainPromo').toggle();
-    $('.navBurger').removeClass('active');
-});
-
 
 var animateButton = function(e) {
 
@@ -119,10 +111,6 @@ $(document).ready(function () {
         loop: true,
         navText: ['', '']
     });
-    // $('.sertificates-slider').on('click', '.owl-item', function () {
-    //     var click = $(this).index();
-    //     $('.sertificates-slider').trigger( 'to.owl.carousel', [click] )
-    // });
 
     $('.slider-container').owlCarousel({
         center: true,
@@ -132,10 +120,6 @@ $(document).ready(function () {
         dots: true,
         navText: ['', '']
     });
-    // $('.slider-container').on('click', '.owl-item', function () {
-    //     var click = $(this).index();
-    //     $('.slider-container').trigger( 'to.owl.carousel', [click] )
-    // });
 
     $('.services-slider, .review-slider').owlCarousel({
         animateOut: 'easeOut',
@@ -148,7 +132,6 @@ $(document).ready(function () {
         autoplayHoverPause:true
     });
 });
-
 
 function autoType(elementClass, typingSpeed){
     var thhis = $(elementClass);
@@ -178,6 +161,7 @@ function autoType(elementClass, typingSpeed){
 }
 
 $(document).ready(function(){
+
     autoType(".type-js",100);
 
     var target = $('.profitCalc');

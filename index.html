@@ -34,10 +34,11 @@
             <ul role="menu col-sm-6">
                 <li><a href="#profitCalc" role="menuitem">СКОЛЬКО Я БУДУ ЗАРАБАТЫВАТЬ?</a></li>
                 <li><a href="#faq" role="menuitem">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ</a></li>
-                <li><a href="#" role="menuitem">ЗАЯВКА НА ПОКУПКУ</a></li>
+                <li><a href="" role="menuitem" data-toggle="modal" data-target="#formModal">ЗАЯВКА НА ПОКУПКУ</a></li>
                 <li><a href="#reviews" role="menuitem">ОТЗЫВЫ</a></li>
             </ul>
         </nav>
+        <div class="wave waveTop" style="background-image: url('/img/wave.png')"></div>
     </div>
 
     <div class="nav-button">
@@ -45,8 +46,8 @@
     </div>
 
     <div class="messendgers">
-        <a href="#" class="telegram">Telegram</a>
-        <a href="#" class="viber">Viber</a>
+        <a href="https://t.me/Coloritrazvitie" class="telegram">Telegram</a>
+        <a href="viber://chat?number=0639390305" class="viber">Viber</a>
     </div>
     <div class="mainPromo">
         <h2 class="headding type-js"><span class="text-js">Мечтаешь о собственном бизнесе?</span></h2>
@@ -57,7 +58,7 @@
         </div>
 
     </div>
-    <div class="promoTextBottom animated bounceInDown">
+    <div class="promoTextBottom">
         <p>Самая доступная и быстроокупаемая франшиза в детской тематике</p>
         <a href="#firstVideo" class="nextStep animated infinite fadeInDown slower"></a>
     </div>
@@ -154,9 +155,9 @@
     </div>
     <div class="advantage advantage-3">
         <div class="text-block wow fadeIn" data-wow-delay="0.05s">
-            <p class="wow fadeIn" data-wow-delay="0.1s">Франшиза Colorit победитель в номинации</p>
-            <h2>“Открытие года”</h2>
-            <p class="wow fadeIn" data-wow-delay="0.3s">по версии рейтинга BigBrands 2018г</p>
+            <p class="wow fadeIn" data-wow-delay="0.1s">Франшиза Colorit стала</p>
+            <h2>“Открытием года”</h2>
+            <p class="wow fadeIn" data-wow-delay="0.3s">по версии рейтинга BigBrands 2018 года</p>
         </div>
         <img src="/img/advantage-3.png" alt="" class="wow fadeIn" data-wow-delay="0.8s">
         <div class="circle circle-9"></div>
@@ -168,7 +169,7 @@
         <iframe width="1120" height="630" src="https://www.youtube.com/embed/y95CwJ5OWs8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <div class="caption-box wow bounceInLeft" data-wow-delay="0.2s" data-wow-duration="2.5s">
             <p>Как купить франшизу Colorit?</p>
-            <a href="" class="bubbly-button wow bounceInRight" data-wow-delay="0.5s" data-wow-duration="2.5s">Заполнить анкету</a>
+            <a href="" class="bubbly-button wow bounceInRight" data-wow-delay="0.5s" data-wow-duration="2.5s" data-toggle="modal" data-target="#formModal">Заполнить анкету</a>
         </div>
     </div>
     <div class="circle circle-3"></div>
@@ -180,87 +181,89 @@
         <div class="text-block wow fadeIn" data-wow-delay="0.2s">
             <p class="location-text">Франшиза будет востребована и прибыльна, как в городе от 20 000 жителей, так и в крупном мегаполисе.</p>
             <p>Город с 1 000 000 населения может вместить около 10 франшиз.</p>
-            <a href="" class="bubbly-button">Открыть Colorit в своем городе</a>
+            <a href="" class="bubbly-button" data-toggle="modal" data-target="#formModal">Открыть Colorit в своем городе</a>
         </div>
         <img src="/img/locations-map.png" alt="" class="wow fadeIn" data-wow-delay="0.3s"">
         <div class="circle circle-3"></div>
     </div>
 </div>
 <div class="card-slider" id="card-slider">
-    <h2>Зарабатывай круглый год</h2>
-    <p>Выбери свою модель бизнеса</p>
+    <div class="card-head">
+        <h2>Зарабатывай круглый год</h2>
+        <p>Выбери свою модель бизнеса</p>
+    </div>
     <div class="slider-container owl-carousel">
         <div class="slider-item slider-item-1 wow fadeIn" data-wow-delay="0.1s">
             <img src="/img/card-slider-1.png" alt="">
             <h4>Стационарная точка в помещении</h4>
             <p>Стационарная точка Colorit на улице (торговый центр, центр творчества, магазин детских товаров, ресторан с детской зоной и т.д)</p>
-            <button class="bubbly-button slider-button"><span>Хочу открыть такой бизнес!</span></button>
+            <button class="bubbly-button slider-button" data-toggle="modal" data-target="#formModal"><span>Хочу открыть такой бизнес!</span></button>
         </div>
         <div class="slider-item slider-item-2 wow fadeIn" data-wow-delay="0.2s">
             <img src="/img/card-slider-2.png" alt="">
             <h4>Стационарная точка на улице</h4>
             <p>Стационарная точка Colorit на улице в парке или уличном игровом комплексе.</p>
-            <button class="bubbly-button slider-button"><span>Хочу открыть такой бизнес!</span></button>
+            <button class="bubbly-button slider-button" data-toggle="modal" data-target="#formModal"><span>Хочу открыть такой бизнес!</span></button>
         </div>
         <div class="slider-item slider-item-3 wow fadeIn" data-wow-delay="0.3s">
             <img src="/img/card-slider-3.png" alt="">
             <h4>Мастер-класс</h4>
             <p>Работа с комплексом в формате мастер-класса на выездных мероприятиях, фестивалях, днях рождения, городских праздниках и любых ивентах с подходящей целевой аудиторией.</p>
-            <button class="bubbly-button slider-button"><span>Хочу зарабатывать на мастер-классах!</span></button>
+            <button class="bubbly-button slider-button" data-toggle="modal" data-target="#formModal"><span>Хочу зарабатывать на мастер-классах!</span></button>
         </div>
         <div class="slider-item slider-item-1">
             <img src="/img/card-slider-1.png" alt="">
             <h4>Стационарная точка в помещении</h4>
             <p>Стационарная точка Colorit на улице (торговый центр, центр творчества, магазин детских товаров, ресторан с детской зоной и т.д)</p>
-            <button class="bubbly-button slider-button"><span>Хочу открыть такой бизнес!</span></button>
+            <button class="bubbly-button slider-button" data-toggle="modal" data-target="#formModal"><span>Хочу открыть такой бизнес!</span></button>
         </div>
         <div class="slider-item slider-item-2">
             <img src="/img/card-slider-2.png" alt="">
             <h4>Стационарная точка на улице</h4>
             <p>Стационарная точка Colorit на улице в парке или уличном игровом комплексе.</p>
-            <button class="bubbly-button slider-button"><span>Хочу открыть такой бизнес!</span></button>
+            <button class="bubbly-button slider-button" data-toggle="modal" data-target="#formModal"><span>Хочу открыть такой бизнес!</span></button>
         </div>
         <div class="slider-item slider-item-3">
             <img src="/img/card-slider-3.png" alt="">
             <h4>Мастер-класс</h4>
             <p>Работа с комплексом в формате мастер-класса на выездных мероприятиях, фестивалях, днях рождения, городских праздниках и любых ивентах с подходящей целевой аудиторией.</p>
-            <button class="bubbly-button slider-button"><span>Хочу зарабатывать на мастер-классах!</span></button>
+            <button class="bubbly-button slider-button" data-toggle="modal" data-target="#formModal"><span>Хочу зарабатывать на мастер-классах!</span></button>
         </div>
         <div class="slider-item slider-item-1">
             <img src="/img/card-slider-1.png" alt="">
             <h4>Стационарная точка в помещении</h4>
             <p>Стационарная точка Colorit на улице (торговый центр, центр творчества, магазин детских товаров, ресторан с детской зоной и т.д)</p>
-            <button class="bubbly-button slider-button"><span>Хочу открыть такой бизнес!</span></button>
+            <button class="bubbly-button slider-button" data-toggle="modal" data-target="#formModal"><span>Хочу открыть такой бизнес!</span></button>
         </div>
         <div class="slider-item slider-item-2">
             <img src="/img/card-slider-2.png" alt="">
             <h4>Стационарная точка на улице</h4>
             <p>Стационарная точка Colorit на улице в парке или уличном игровом комплексе.</p>
-            <button class="bubbly-button slider-button"><span>Хочу открыть такой бизнес!</span></button>
+            <button class="bubbly-button slider-button" data-toggle="modal" data-target="#formModal"><span>Хочу открыть такой бизнес!</span></button>
         </div>
         <div class="slider-item slider-item-3">
             <img src="/img/card-slider-3.png" alt="">
             <h4>Мастер-класс</h4>
             <p>Работа с комплексом в формате мастер-класса на выездных мероприятиях, фестивалях, днях рождения, городских праздниках и любых ивентах с подходящей целевой аудиторией.</p>
-            <button class="bubbly-button slider-button"><span>Хочу зарабатывать на мастер-классах!</span></button>
+            <button class="bubbly-button slider-button" data-toggle="modal" data-target="#formModal"><span>Хочу зарабатывать на мастер-классах!</span></button>
         </div>
         <div class="slider-item slider-item-1">
             <img src="/img/card-slider-1.png" alt="">
             <h4>Стационарная точка в помещении</h4>
             <p>Стационарная точка Colorit на улице (торговый центр, центр творчества, магазин детских товаров, ресторан с детской зоной и т.д)</p>
-            <button class="bubbly-button slider-button"><span>Хочу открыть такой бизнес!</span></button>
+            <button class="bubbly-button slider-button" data-toggle="modal" data-target="#formModal"><span>Хочу открыть такой бизнес!</span></button>
         </div>
         <div class="slider-item slider-item-2">
             <img src="/img/card-slider-2.png" alt="">
             <h4>Стационарная точка на улице</h4>
             <p>Стационарная точка Colorit на улице в парке или уличном игровом комплексе.</p>
-            <button class="bubbly-button slider-button"><span>Хочу открыть такой бизнес!</span></button>
+            <button class="bubbly-button slider-button" data-toggle="modal" data-target="#formModal"><span>Хочу открыть такой бизнес!</span></button>
         </div>
         <div class="slider-item slider-item-3">
             <img src="/img/card-slider-3.png" alt="">
             <h4>Мастер-класс</h4>
             <p>Работа с комплексом в формате мастер-класса на выездных мероприятиях, фестивалях, днях рождения, городских праздниках и любых ивентах с подходящей целевой аудиторией.</p>
-            <button class="bubbly-button slider-button"><span>Хочу зарабатывать на мастер-классах!</span></button>
+            <button class="bubbly-button slider-button" data-toggle="modal" data-target="#formModal"><span>Хочу зарабатывать на мастер-классах!</span></button>
         </div>
     </div>
 </div>
@@ -272,7 +275,7 @@
             <ul>
                 <li class="sand-text-li-1">Для окрашивания мраморной крошки и кварцевого песка используются лучшие полиуретановые системы окраски.</li>
                 <li class="sand-text-li-2">Наш цветной песок не вызывает аллергических реакций, не красит руки и одежду.</li>
-                <li class="sand-text-li-3">Разрешен в ис пользование в детских/медицинских учреждениях, что подтверждено сертификатами качества.</li>
+                <li class="sand-text-li-3">Разрешен в использование в детских/медицинских учреждениях, что подтверждено сертификатами качества.</li>
             </ul>
         </div>
         <img src="/img/sand-1.png" alt="">
@@ -397,7 +400,7 @@
     <div class="profitcalc-container">
         <h2 class="type-2-js"><span class="text-js">Сколько я буду зарабатывать?</span></h2>
         <p>Расчитай свой доход на основе реальных цифр и показателей ( аренда, закупка товара, зарплаты и т.д)</p>
-        <button class="profitcalc-btn bubbly-button">Получить доступ к таблице</button>
+        <button class="profitcalc-btn bubbly-button" data-toggle="modal" data-target="#formModal">Получить доступ к таблице</button>
     </div>
     <div class="screen wow fadeIn" data-wow-delay="0.2s">
         <img src="" alt="">
@@ -471,7 +474,7 @@
 <div class="cta-block" id="cta-block">
     <div class="cta-text">
         <h2 class="wow fadeInLeft" data-wow-delay="0.2s">Заполни заявку на покупку франшизы</h2>
-        <button class="bubbly-button wow fadeInRight" data-wow-delay="0.2s">Оставить заявку</button>
+        <button class="bubbly-button wow fadeInRight" data-wow-delay="0.2s" data-toggle="modal" data-target="#formModal">Оставить заявку</button>
     </div>
     <div class="circle circle-7"><img src="/img/dashed-circle.svg" alt=""></div>
 </div>
@@ -613,7 +616,7 @@
     <div class="footer-container">
         <div class="footer-top">
             <h2>Остались вопросы?<br><span>Мы можем на них ответить</span></h2>
-            <button class="bubbly-button">Оставить заявку</button>
+            <button class="bubbly-button" data-toggle="modal" data-target="#formModal">Оставить заявку</button>
         </div>
         <div class="footer-bottom">
             <div class="footer-bottom-column">
@@ -629,7 +632,7 @@
                 <ul class="footer-column-list">
                     <li><a href="#profitCalc">Сколько я буду зарабатывать?</a></li>
                     <li><a href="#faq">Часто задаваемые вопросы</a></li>
-                    <li><a href="">Заявка на покупку</a></li>
+                    <li><a href="" data-toggle="modal" data-target="#formModal">Заявка на покупку</a></li>
                     <li><a href="#reviews">Отзывы</a></li>
                 </ul>
             </div>
@@ -693,7 +696,6 @@
         </div>
     </div>
 </div>
-
 
     <script src="js/jquery/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

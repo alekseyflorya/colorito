@@ -55,11 +55,11 @@ p {
 .logo {
   //display: inline-block;
   position: absolute;
-  width: 100%;
+  width: 28%;
   overflow: hidden;
-  height: 100%;
+  height: 25%;
   background: url(../img/logo-bg.png) no-repeat;
-  z-index: 10;
+  z-index: 12;
 
   img{
     padding-top: 35px;
@@ -70,7 +70,7 @@ p {
   position: absolute;
   right: 250px;
   top: 96px;
-  z-index: 10;
+  z-index: 12;
 
   :last-child{
     margin-left: 34px;
@@ -81,39 +81,6 @@ p {
     color: white;
   }
 }
-//.menu{
-//  position: absolute;
-//  right: 74px;
-//  top: 74px;
-//  width: 70px;
-//  height: 70px;
-//  box-sizing: border-box;
-//  border: 1px solid #fff;
-//  border-radius: 50%;
-//  display: flex;
-//  justify-content: center;
-//  align-items: center;
-//  z-index: 10;
-//  font-size: 32px;
-//  color: #ffffff;
-//  box-shadow: 0 0 40px rgba(255,255,255,0.3);
-//
-//  .bars{
-//    display: flex;
-//    flex-direction: column;
-//    justify-content: center;
-//    align-items: center;
-//    .bar{
-//      width: 32px;
-//      height: 5px;
-//      border-radius: 20px;
-//      background: #fff;
-//    }
-//    .bar:nth-child(2){
-//      margin: 6px 0;
-//    }
-//  }
-//}
 
 @import "menu";
 
@@ -141,9 +108,11 @@ p {
   align-items: center;
   .headding{
     max-width: 595px;
+    min-height: 189px;
     color: #fff;
     margin: 0;
     span{
+      font-family: $headFont;
       @extend %headFontStyles;
       max-width: 595px;
       color: #fff;
@@ -196,7 +165,7 @@ p {
   width: 101%;
   overflow: hidden;
   height: 100%;
-  bottom: -1px;
+  bottom: 0px;
   background-image: url(../img/header-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -209,7 +178,7 @@ p {
   position: absolute;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 101%;
   background-repeat: repeat no-repeat;
   background-position: 0 bottom;
   transform-origin: center bottom;
@@ -219,7 +188,7 @@ p {
 }
 .waveBottom {
   background-size: 100%;
-  top: 17%;
+  top: 14%;
   left: -3%;
   transform: rotate(3deg);
   z-index: 11;
@@ -254,7 +223,7 @@ p {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-bottom: 160px;
+  margin-bottom: 260px;
   .circle{
     @extend %circleTemp;
   }
@@ -262,7 +231,7 @@ p {
     background: #B1ED07;
     width: 21px;
     height: 21px;
-    bottom: -15%;
+    bottom: -30%;
     right: 20%;
   }
   .circle-3{
@@ -296,7 +265,7 @@ p {
     position: relative;
     margin: auto;
     iframe{
-      border-radius: 80px;
+      border-radius: 80px 80px 0 0;
       z-index: 9;
     }
     .caption-box{
@@ -305,13 +274,13 @@ p {
       height: 121px;
       background: url(../img/bg-owners.png) no-repeat;
       background-size: contain;
-      bottom: 0;
+      bottom: -115px;
       left: 0;
       z-index: 10;
       .caption-item{
         display: inline-block;
         color: #ffffff;
-        height: 121px;
+        height: 115px;
         font-size: 24px;
         line-height: 140%;
         position: absolute;
@@ -326,6 +295,7 @@ p {
       .caption-item-2{
         font-weight: 600;
         width: 44.75%;
+        box-sizing: border-box;
         background: #5831B5;
         border: 5px solid #F2C94C;
         border-radius: 117px 120px 120px 120px;
@@ -351,6 +321,7 @@ p {
   position: relative;
   max-width: 1180px;
   margin: auto;
+  margin-bottom: 160px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -501,9 +472,10 @@ p {
   .advantage-3{
     position: relative;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     .text-block{
-      max-width: 483px;
+      max-width: 525px;
+      margin-right: 75px;
       margin-bottom: 100px;
       h2{
         margin-top: 12px;
@@ -522,7 +494,7 @@ p {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-bottom: 120px;
+  margin-bottom: 220px;
   .circle{
     @extend %circleTemp;
   }
@@ -547,7 +519,7 @@ p {
     position: relative;
     margin: auto;
     iframe{
-      border-radius: 80px;
+      border-radius: 80px 80px 0 0;
       z-index: 9;
     }
     .caption-box{
@@ -556,7 +528,7 @@ p {
       height: 121px;
       background: url(../img/bg-owners.png) no-repeat;
       background-size: contain;
-      bottom: 0;
+      bottom: -110px;
       left: 0;
       z-index: 10;
       display: flex;
@@ -582,7 +554,7 @@ p {
 .locationBlock{
   max-width: 1180px;
   margin: auto;
-  margin-bottom: 80px;
+  margin-bottom: 140px;
 
   h2{
     @extend %headFontStyles;
@@ -600,19 +572,17 @@ p {
     }
     .circle-3{
       background: #11C6FF;
-      width: 57px;
-      height: 172px;
-      border-radius: 0;
-      border-top-left-radius: 100%;
-      border-bottom-left-radius: 100%;
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
       filter: blur(10px);
       opacity: 0.2;
       top: 25%;
-      right: -11%;
+      right: -5%;
       z-index: -1;
     }
     img{
-      margin-top: -50px;
+      margin-top: -80px;
     }
     .text-block{
       max-width: 425px;
@@ -641,14 +611,22 @@ p {
   }
 }
 .card-slider{
-  max-width: 1200px;
+  max-width: 95%;
   margin: auto;
-  margin-bottom: 80px;
+  margin-bottom: 160px;
+  .card-head{
+    max-width: 1180px;
+    margin: auto;
+  }
   h2{
     @extend %headFontStyles;
+    max-width: 500px;
+  }
+  &>p{
+    max-width: 500px;
   }
   .slider-container{
-    margin-top: 50px;
+    margin-top: 80px;
     display: inline-block;
     perspective: 100px;
     perspective-origin: center;
@@ -660,9 +638,9 @@ p {
       background: #5831B5;
       border-radius: 49px;
       box-sizing: border-box;
-      max-width: 520px;
-      min-height: 660px;
-      padding: 30px;
+      max-width: 420px;
+      min-height: 710px;
+      padding: 20px;
       h4{
         color: #FFF500;
         font-weight: bold;
@@ -670,13 +648,13 @@ p {
         line-height: 31px;
         margin-top: 9px;
         margin-bottom: 9px;
-        max-width: 480px;
+        max-width: 500px;
       }
       p{
         color: #ffffff;
         margin-top: 9px;
         margin-bottom: 19px;
-        max-width: 480px;
+        max-width: 500px;
       }
       img{
         max-width: 100%;
@@ -692,8 +670,6 @@ p {
         margin-left: 40%;
         padding: 16px 39px;
         max-width: 20%;
-        //position: absolute;
-        //bottom: 40px;
         z-index: 10;
         text-align: center;
         span{
@@ -707,22 +683,22 @@ p {
       opacity: 0;
     }
     .active{
-      transform: translateX(70px) scale(0.8);
+      transform: translateX(100px) scale(0.8);
       opacity: 0.4;
-      //transition: all 1s;
+      transition: all .9s ease-out;
       visibility: visible;
     }
     .active.center + .active{
-      transform: translateX(-70px) scale(0.8);
+      transform: translateX(-100px) scale(0.8);
       z-index: 10;
       opacity: 0.4;
-      transition: all 1s;
+      transition: all .9s ease-out;
       visibility: visible;
     }
     .active + .active.center{
       transform: translateX(0) scale(1);
       z-index: 12;
-      transition: all 1s;
+      transition: all 1s ease-in;
       opacity: 1;
       visibility: visible;
     }
@@ -736,10 +712,12 @@ p {
         width: 100%;
         max-width: 100%;
         text-transform: none;
+        padding: 16px 5px;
         span{
           display: inline;
           font-size: 18px;
           padding: 16px 5px;
+          width: 100%;
         }
       }
     }
@@ -765,7 +743,7 @@ p {
 .materials{
   max-width: 1180px;
   margin: auto;
-  margin-bottom: 80px;
+  margin-bottom: 160px;
   h2{
     @extend %headFontStyles;
   }
@@ -877,7 +855,7 @@ p {
 .sertificates{
   max-width: 1180px;
   margin: auto;
-  margin-bottom: 160px;
+  margin-bottom: 210px;
   h2{
     @extend %headFontStyles;
     max-width: 50%;
@@ -963,7 +941,7 @@ p {
     height: 121px;
     background: #602ED5;
     position: absolute;
-    bottom: -80px;
+    bottom: -74px;
     border-radius: 121px;
     z-index: 10;
     text-align: right;
@@ -1226,6 +1204,7 @@ p {
     margin-bottom: 150px;
     h2{
       color: #ffffff;
+      min-height: 126px;
       span{
         @extend %headFontStyles;
         max-width: 595px;
@@ -1390,9 +1369,9 @@ p {
 .cta-block{
   position: relative;
   margin-bottom: 160px;
-  min-height: 550px;
+  min-height: 475px;
   background: url("../img/cta-bg.png") no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   .circle{
     @extend %circleTemp;
   }
@@ -1460,12 +1439,12 @@ p {
   }
   max-width: 1120px;
   margin: auto;
-  margin-bottom: 160px;
+  margin-bottom: 260px;
   .video-container{
     position: relative;
     margin: auto;
     iframe{
-      border-radius: 80px;
+      border-radius: 80px 80px 0 0;
       z-index: 9;
     }
     .caption-box{
@@ -1474,7 +1453,7 @@ p {
       height: 121px;
       background: url(../img/bg-owners.png) no-repeat;
       background-size: contain;
-      bottom: 0;
+      bottom: -110px;
       left: 0;
       z-index: 10;
       display: flex;
@@ -1784,3 +1763,4 @@ p {
     }
   }
 }
+@import "responsive";
