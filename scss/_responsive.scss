@@ -16,4 +16,10 @@
   .card-slider .slider-container .owl-stage .active.center+.active{
     transform: translateX(-250px) scale(0.8);
   }
+  .profitCalc {
+    min-height: 1000px;
+    .screen{
+      margin-bottom: 235px;
+    }
+  }
 }

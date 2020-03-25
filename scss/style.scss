@@ -632,6 +632,34 @@ p {
           background: #FFFFFF;
           color: #9D75FF;
         }
+        &:before{
+          display: none;
+          top: -75%;
+          background-image:
+                  radial-gradient(circle, #9D75FF 20%, transparent 20%),
+                  radial-gradient(circle, transparent 20%, #9D75FF 20%, transparent 30%),
+                  radial-gradient(circle, #9D75FF 20%, transparent 20%),
+                  radial-gradient(circle, #9D75FF 20%, transparent 20%),
+                  radial-gradient(circle, transparent 10%, #9D75FF 15%, transparent 20%),
+                  radial-gradient(circle, #9D75FF 20%, transparent 20%),
+                  radial-gradient(circle, #9D75FF 20%, transparent 20%),
+                  radial-gradient(circle, #9D75FF 20%, transparent 20%),
+                  radial-gradient(circle, #9D75FF 20%, transparent 20%);
+          background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+        }
+        &:after{
+          display: none;
+          bottom: -75%;
+          background-image:
+                  radial-gradient(circle, #9D75FF 20%, transparent 20%),
+                  radial-gradient(circle, #9D75FF 20%, transparent 20%),
+                  radial-gradient(circle, transparent 10%, #9D75FF 15%, transparent 20%),
+                  radial-gradient(circle, #9D75FF 20%, transparent 20%),
+                  radial-gradient(circle, #9D75FF 20%, transparent 20%),
+                  radial-gradient(circle, #9D75FF 20%, transparent 20%),
+                  radial-gradient(circle, #9D75FF 20%, transparent 20%);
+          background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+        }
       }
       .location-text{
         margin-top: 40px;
