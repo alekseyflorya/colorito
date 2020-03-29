@@ -112,6 +112,12 @@ $(document).ready(function () {
         dots: true,
         navText: ['', '']
     });
+    $('.sertificates-slider-2').owlCarousel({
+        items: 1,
+        loop: true,
+        dots: true,
+        navText: ['', '']
+    });
 
     $('.slider-container').owlCarousel({
         center: true,
@@ -122,25 +128,43 @@ $(document).ready(function () {
         navText: ['', '']
     });
 
+    $('.slider-container-2').owlCarousel({
+        items: 1,
+        loop: true,
+        nav:true,
+        dots: true,
+        navText: ['', '']
+    });
+
     $('.services-slider').owlCarousel({
         animateOut: 'slideOutLeft',
         animateIn: 'slideInRight',
         items:1,
-        margin:30,
-        autoplay:true,
-        autoplayTimeout:5000,
-        stagePadding:30,
-        smartSpeed:450
+        loop: true,
+        smartSpeed:500
     });
+
     $('.review-slider').owlCarousel({
         animateOut: 'slideOutLeft',
         animateIn: 'slideInRight',
         items:1,
-        margin:30,
-        autoplay:true,
-        autoplayTimeout:5000,
-        stagePadding:30,
-        smartSpeed:450
+        loop: true,
+        smartSpeed:500
+    });
+
+    autoType(".type-js",150);
+
+    var target = $('.profitCalc');
+    var targetPos = target.offset().top;
+    var winHeight = $(window).height();
+    var scrollToElem = targetPos - winHeight;
+    var count = true;
+    $(window).scroll(function(){
+        var winScrollTop = $(this).scrollTop();
+        if((winScrollTop > scrollToElem) && count ){
+            autoType(".type-2-js",100);
+            count = false;
+        }
     });
 });
 
@@ -170,21 +194,3 @@ function autoType(elementClass, typingSpeed){
         }
     },1000);
 }
-
-$(document).ready(function(){
-
-    autoType(".type-js",100);
-
-    var target = $('.profitCalc');
-    var targetPos = target.offset().top;
-    var winHeight = $(window).height();
-    var scrollToElem = targetPos - winHeight;
-    var count = true;
-    $(window).scroll(function(){
-        var winScrollTop = $(this).scrollTop();
-        if((winScrollTop > scrollToElem) && count ){
-            autoType(".type-2-js",100);
-            count = false;
-        }
-    });
-});

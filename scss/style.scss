@@ -109,12 +109,13 @@ p {
   .headding{
     max-width: 595px;
     min-height: 189px;
+    padding-right: 195px;
     color: #fff;
     margin: 0;
     span{
       font-family: $headFont;
       @extend %headFontStyles;
-      max-width: 595px;
+      max-width: 400px;
       color: #fff;
       margin: 0;
     }
@@ -141,6 +142,9 @@ p {
 }
 .mainPromo.thanks{
   text-align: center;
+  h2{
+    padding-right: 0;
+  }
   h2 img{
     margin-bottom: 40px;
   }
@@ -247,7 +251,6 @@ p {
   }
 }
 
-
 .firstVideo{
   position: relative;
   display: flex;
@@ -296,6 +299,34 @@ p {
     iframe{
       border-radius: 80px 80px 0 0;
       z-index: 9;
+    }
+    //.video-block::after{
+    //    content: url("../img/play-lg.svg");
+    //    display: block;
+    //    max-width: 157px;
+    //    max-height: 157px;
+    //    position: absolute;
+    //    top: calc(50% - 70px);
+    //    left: calc(50% - 78px);
+    //    z-index: 11;
+    //}
+    img{
+      border-radius: 80px 80px 0 0;
+      max-width: 1120px;
+      max-height: 630px;
+      display: block;
+      position: relative;
+      z-index: 9;
+      &::after{
+        content: url("../img/play-lg.svg");
+        display: block;
+        max-width: 157px;
+        max-height: 157px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 11;
+      }
     }
     .caption-box{
       position: absolute;
@@ -551,6 +582,12 @@ p {
       border-radius: 80px 80px 0 0;
       z-index: 9;
     }
+    .mobile-text{
+      display: none;
+    }
+    .desktop-text{
+      display: block;
+    }
     .caption-box{
       position: absolute;
       width: 100%;
@@ -798,6 +835,9 @@ p {
       display: block;
     }
   }
+  .slider-container-2{
+    display: none;
+  }
 }
 .owl-theme .owl-nav [class*=owl-]:hover{
   background: transparent;
@@ -841,6 +881,12 @@ p {
     align-items: center;
     margin-bottom: 80px;
     position: relative;
+    .mobile-img{
+      display: none;
+    }
+    .desktop-img{
+      display: block;
+    }
     .circle{
       @extend %circleTemp;
     }
@@ -900,6 +946,9 @@ p {
     justify-content: space-around;
     align-items: center;
     flex-direction: row-reverse;
+    .mobile-img{
+      display: none;
+    }
     .stencils-text{
       width: 50%;
       margin-left: 85px;
@@ -982,6 +1031,9 @@ p {
       visibility: visible;
     }
   }
+  .sertificates-slider-2{
+    display:none;
+  }
   .owl-nav.disabled, .owl-dots.disabled{
     display: block;
   }
@@ -1023,6 +1075,9 @@ p {
   img{
     margin-left: 40px;
     z-index: 11;
+  }
+  .mobile-img{
+    display: none;
   }
   .equipment-warning{
     width: 100%;
@@ -1068,6 +1123,9 @@ p {
     @extend %headFontStyles;
     max-width: 50%;
   }
+  &>img{
+    display: none;
+  }
   p{
     max-width: 500px;
   }
@@ -1079,6 +1137,7 @@ p {
     justify-content: space-between;
     align-items: flex-start;
     img{
+      display: block;
       margin-top: -150px;
     }
   }
@@ -1123,7 +1182,6 @@ p {
         border: 5px solid #9D75FF;
         color: #9D75FF;
       }
-
       .price{
         font-family: $headFont;
         font-weight: 900;
@@ -1140,10 +1198,17 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .mobile-img{
+      display: none;
+    }
+    .desktop-img{
+      display: block;
+    }
     .stat-text{
       h3{
         color: #FF7E06;
         max-width: 487px;
+        margin-bottom: 30px;
       }
       ul{
         max-width: 507px;
@@ -1164,6 +1229,11 @@ p {
   max-width: 1180px;
   margin: auto;
   margin-bottom: 160px;
+  h2{
+    color: #3FB7FF;
+    max-width: 455px;
+    margin-bottom: 80px;
+  }
   .services-slider{
     .services-item{
       background: #FFFFFF;
@@ -1189,6 +1259,7 @@ p {
       }
       & > img{
         max-width: 100%;
+        margin-right: 10px;
       }
     }
     .services-slider.owl-carousel .owl-stage .active,
@@ -1307,7 +1378,6 @@ p {
     }
     @import "buttons";
     .profitcalc-btn{
-
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1332,6 +1402,12 @@ p {
     background: #ffffff;
     border-radius: 35px;
     margin-bottom: 130px;
+    &.desktop-img{
+      display: block;
+    }
+    &.mobile-img{
+      display: none;
+    }
   }
   .profitcalc-wave{
     position: absolute;
@@ -1598,6 +1674,7 @@ p {
           font-weight: bold;
           font-size: 20px;
           line-height: 27px;
+          outline: none;
           &::before{
             box-sizing: border-box;
             content: '1';
@@ -1863,7 +1940,7 @@ p {
         font-weight: normal;
         font-size: 20px;
         line-height: 27px;
-        padding: .9rem 1.2rem;
+        padding: 1.4rem 1rem;
         &::placeholder{
           font-size: 20px;
           line-height: 27px;
@@ -1903,6 +1980,7 @@ p {
   .modal-content{
     background: transparent;
     width: auto;
+    border: none;
     h3{
       font-size: 24px;
       line-height: 29px;
