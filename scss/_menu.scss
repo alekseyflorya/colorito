@@ -76,6 +76,9 @@
   visibility: hidden;
   transition: all .4s ease-in-out;
   overflow: hidden;
+  .messengers{
+    display: none;
+  }
   &.open {
     opacity: .99;
     visibility: visible;

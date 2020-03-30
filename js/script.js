@@ -140,6 +140,7 @@ $(document).ready(function () {
         animateOut: 'slideOutLeft',
         animateIn: 'slideInRight',
         items:1,
+        autoplay:true,
         loop: true,
         smartSpeed:500
     });
@@ -148,11 +149,12 @@ $(document).ready(function () {
         animateOut: 'slideOutLeft',
         animateIn: 'slideInRight',
         items:1,
+        autoplay:true,
         loop: true,
         smartSpeed:500
     });
 
-    autoType(".type-js",150);
+    autoType(".type-js",120);
 
     var target = $('.profitCalc');
     var targetPos = target.offset().top;

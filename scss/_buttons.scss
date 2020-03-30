@@ -78,10 +78,12 @@ $baby-blue: #f8faff;
     &:before{
       display: block;
       animation: topBubbles ease-in-out 0.75s forwards;
+      z-index: 15;
     }
     &:after{
       display: block;
       animation: bottomBubbles ease-in-out 0.75s forwards;
+      z-index: 15;
     }
   }
 }

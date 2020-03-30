@@ -84,12 +84,12 @@ p {
 
 @import "menu";
 
-.messendgers {
+.waveWrapper > .messendgers {
   transform: rotate(-90deg);
   transform-origin: 0 0;
   position: absolute;
   left: 74px;
-  top: 50%;
+  top: 45%;
   z-index: 11;
   .telegram, .viber {
     color: #ffffff;
@@ -252,6 +252,7 @@ p {
 }
 
 .firstVideo{
+  max-width: 1180%;
   position: relative;
   display: flex;
   justify-content: center;
@@ -297,6 +298,8 @@ p {
     position: relative;
     margin: auto;
     iframe{
+      max-width: 100%;
+      max-height: 100%;
       border-radius: 80px 80px 0 0;
       z-index: 9;
     }
@@ -1850,7 +1853,6 @@ p {
       background: url("../img/form-top-bg.png") no-repeat;
       background-size: cover;
       border-bottom: none;
-      //border-top: 1px solid transparent;
       .close{
         background: transparent;
         padding: 2rem 2rem 0 0;
@@ -2012,6 +2014,10 @@ p {
       border-bottom-right-radius: 30px;
       border-bottom-left-radius: 30px;
       padding: 3rem;
+      label{
+        font-size: 18px;
+        color: #828282;
+      }
       .user_phone{
         background: rgba(88, 49, 181, 0.1);
         border: 1px solid #E3D8FF;
@@ -2019,7 +2025,7 @@ p {
         margin-top: 40px;
         color: #BDBDBD;
         font-size: 18px;
-        padding: .9rem 1.2rem;
+        padding: 1.4rem 1.2rem;
         &:focus{
           color: #1b1e21;
         }

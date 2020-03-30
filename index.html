@@ -38,6 +38,10 @@
                 <li><a href="" role="menuitem" data-toggle="modal" data-target="#formModal">ЗАЯВКА НА ПОКУПКУ</a></li>
                 <li><a href="#reviews" role="menuitem">ОТЗЫВЫ</a></li>
             </ul>
+            <div class="messengers">
+                <a href="https://t.me/Coloritrazvitie" class="telegram">Telegram</a>
+                <a href="viber://chat?number=0639390305" class="viber">Viber</a>
+            </div>
         </nav>
         <div class="wave waveTop" style="background-image: url('/img/wave.png')"></div>
     </div>
@@ -75,11 +79,12 @@
     <div class="circle circle-6"></div>
     <div class="circle circle-7"><img src="/img/dashed-circle.svg" alt=""></div>
     <div class="circle circle-8"></div>
+    <img class="dashlinebottom" src="/img/dashes-line-header-bg.png">
 </div>
 <div class="firstVideo" id="firstVideo">
     <div class="video-container wow fadeIn" data-wow-delay="0.3s">
         <div class="video-block">
-            <img src="/img/first-video.jpg">
+            <iframe width="1120" height="630" src="https://www.youtube.com/embed/rWVLLxYXr2s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="caption-box wow fadeIn" data-wow-delay="0.3s">
             <div class="caption-item caption-item-1 wow fadeIn" data-wow-delay="0.3s">Островок детского творчества по <br>раскрашиванию картин цветным песком</div>
@@ -162,7 +167,7 @@
             <h2>“Открытием года”</h2>
             <p class="wow fadeIn" data-wow-delay="0.3s">по версии рейтинга BigBrands 2018 года</p>
         </div>
-        <img src="/img/advantage-3.png" alt="" class="wow fadeIn" data-wow-delay="0.8s">
+        <img src="/img/advantage-3.png" alt="">
         <div class="circle circle-9"></div>
         <div class="circle circle-3"></div>
     </div>
@@ -170,10 +175,10 @@
 <div class="secondVideo" id="secondVideo">
     <div class="video-container wow fadeIn" data-wow-delay="0.3s">
         <iframe width="1120" height="630" src="https://www.youtube.com/embed/y95CwJ5OWs8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="caption-box wow bounceInLeft" data-wow-delay="0.2s" data-wow-duration="2.5s">
+        <div class="caption-box wow fadeIn" data-wow-delay="0.3s" data-wow-duration="2.5s">
             <p class="desktop-text">Как купить франшизу Colorit?</p>
             <p class="mobile-text">Самая доступная и быстроокупаемая франшиза в детской тематике</p>
-            <a href="" class="bubbly-button wow bounceInRight" data-wow-delay="0.5s" data-wow-duration="2.5s" data-toggle="modal" data-target="#formModal">Заполнить анкету</a>
+            <a href="" class="bubbly-button wow fadeIn" data-wow-delay="0.5s" data-wow-duration="2.5s" data-toggle="modal" data-target="#formModal">Заполнить анкету</a>
         </div>
     </div>
     <div class="circle circle-3"></div>
@@ -332,7 +337,7 @@
         <div class="services-item services-item-1">
             <div class="services-text">
                 <h3><img src="/img/1.png" alt="">Выездной мастер-класс</h3>
-                <p>Благодаря мобильному оборудованию, и нашей системе работы, вы можете зарабатывать 2000-5000грн.</p>
+                <p>Благодаря мобильному оборудованию, и нашей системе работы, вы можете зарабатывать 2000-5000грн в день.</p>
             </div>
             <img src="/img/services-1.png" alt="">
         </div>
@@ -358,7 +363,7 @@
         <div class="screen mobile-img wow fadeIn" data-wow-delay="0.2s">
             <img src="" alt="">
         </div>
-        <p>Расчитай свой доход на основе реальных цифр и показателей ( аренда, закупка товара, зарплаты и т.д)</p>
+        <p>Расчитай свой доход на основе реальных цифр и показателей (аренда, закупка товара, зарплаты и т.д)</p>
         <button class="profitcalc-btn bubbly-button" data-toggle="modal" data-target="#formModal">Получить доступ к таблице</button>
     </div>
     <div class="screen desktop-img wow fadeIn" data-wow-delay="0.2s">
@@ -575,7 +580,7 @@
                 </ul>
             </div>
             <div class="footer-bottom-column">
-                <ul class="footer-column-list">
+                <ul class="footer-column-list footer-contacts">
                     <li>Контакты:</li>
                     <li><a href="tel:">+38 (097) 939 03 05</a></li>
                     <li><a href="tel:">+38 (063) 939 03 05</a></li>
@@ -693,7 +698,7 @@
                         <h3 class="modal-title" id="callbackModalLabel">Заказать обратный звонок</h3>
                         <form action="telegram.php" method="POST">
                             <div class="form-group">
-                                <label for="">Оставьте ваш номер телефона и мы вам перезвоним!</label>
+                                <label for="user_phone">Оставьте ваш номер телефона и мы вам перезвоним!</label>
                                 <input type="tel" class="form-control user_phone" id="user_phone" name="user_phone" placeholder="(xxx) xxx xx xx" required pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
                             </div>
                             <button type="submit" class="bubbly-button">Заказать звонок</button>
