@@ -2,9 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 @font-face {
   font-family: "Intro Demo";
-  src: url("../fonts/IntroDemo-BlackCAPS.eot") format("eot"),
-  url("../fonts/IntroDemo-BlackCAPS.woff") format("woff"),
-  url("../fonts/IntroDemo-BlackCAPS.woff2") format("woff2");
+  src: url("../fonts/Intro-Black.eot") format("eot"),
+  url("../fonts/Intro-Black.woff") format("woff"),
+  url("../fonts/Intro-Black.ttf") format("ttf"),
+  url("../fonts/Intro-Black-Caps.eot") format("eot"),
+  url("../fonts/Intro-Black-Caps.woff") format("woff"),
+  url("../fonts/Intro-Black-Caps.ttf") format("ttf");
 }
 %headFontStyles{
   font-style: normal;
@@ -115,6 +118,7 @@ p {
     span{
       font-family: $headFont;
       @extend %headFontStyles;
+      text-transform: uppercase;
       max-width: 400px;
       color: #fff;
       margin: 0;
@@ -460,6 +464,9 @@ p {
     left: -7%;
     bottom: -35%;
     z-index: 0;
+  }
+  &>img{
+    display: none;
   }
   .advantage{
     margin-top: 80px;
@@ -949,8 +956,27 @@ p {
     justify-content: space-around;
     align-items: center;
     flex-direction: row-reverse;
+    position: relative;
     .mobile-img{
       display: none;
+    }
+    .circle{
+      @extend %circleTemp;
+    }
+    .circle-3{
+      background: #B1ED07;
+      width: 74px;
+      height: 74px;
+      background: #FF7E06;
+      top: 1%;
+      left: 23%;
+    }
+    .circle-9{
+      background: #FFDD00;
+      width: 15px;
+      height: 15px;
+      top: -2%;
+      left: 31%;
     }
     .stencils-text{
       width: 50%;
@@ -1437,6 +1463,11 @@ p {
       background: #FFFFFF;
       img{
 
+      }
+      iframe{
+        max-width: 748px;
+        max-height: 456px;
+        border-radius: 60px;
       }
       .review-text{
         margin-left: 120px;

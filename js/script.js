@@ -141,7 +141,8 @@ $(document).ready(function () {
         animateIn: 'slideInRight',
         items:1,
         autoplay:true,
-        loop: true,
+        loop:true,
+        autoplayHoverPause:true,
         smartSpeed:500
     });
 
@@ -151,6 +152,7 @@ $(document).ready(function () {
         items:1,
         autoplay:true,
         loop: true,
+        autoplayHoverPause:true,
         smartSpeed:500
     });
 
