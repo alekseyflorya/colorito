@@ -1471,6 +1471,7 @@ p {
       }
       .review-text{
         margin-left: 120px;
+        margin-right: 10px;
         max-width: 490px;
         h3 {
           position: relative;
@@ -1499,18 +1500,17 @@ p {
         position: absolute;
         outline: none;
         span{
-          font-size: 60px;
+          font-size: 80px;
           color: #FFDD00;
         }
       }
 
       .owl-prev {
-        left: -2%;
-        top: 0;
+        display: none;
       }
 
       .owl-next {
-        right: -2%;
+        right: -1%;
         top: 0;
       }
     }

@@ -150,9 +150,8 @@ $(document).ready(function () {
         animateOut: 'slideOutLeft',
         animateIn: 'slideInRight',
         items:1,
-        autoplay:true,
         loop: true,
-        autoplayHoverPause:true,
+        nav:true,
         smartSpeed:500
     });
 

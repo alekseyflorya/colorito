@@ -2142,7 +2142,7 @@
       .review-item{
         flex-direction: column;
         margin-left: 10px;
-        margin-right: 5px;
+        margin-right: 10px;
         img{
           max-width: 100%;
         }
@@ -2153,12 +2153,18 @@
         }
         .review-text{
           margin-top: 80px;
-          margin-left: 0;
+          margin-left: 5px;
           max-width: 100%;
           p{
             font-size: 18px;
             color: #646060;
           }
+        }
+      }
+      .owl-nav{
+        .owl-next{
+          height: 35%;
+          right: 2px;
         }
       }
     }
